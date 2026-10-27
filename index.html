@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Yehova Ere Holy Fire Ministries — worship, prayer, sermons, and ministry events.">
+<title>Yehova Ere Holy Fire Ministries</title>
+<style>
+:root{--bg:#080808;--panel:#111;--gold:#d9b15f;--gold2:#f5dfa1;--text:#f7f4ed;--muted:#c2bdb1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.94);backdrop-filter:blur(12px);border-bottom:1px solid #302719}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}.brand{font-weight:800;letter-spacing:.07em;font-size:.95rem;color:var(--gold2)}.brand small{display:block;color:var(--muted);font-size:.67rem;letter-spacing:.18em}
+nav{display:flex;gap:19px;flex-wrap:wrap;font-size:.85rem;color:#e8e0d0}nav a:hover{color:var(--gold2)}
+.lang{border:1px solid #6c542a;background:transparent;color:var(--gold2);padding:8px 12px;border-radius:30px;cursor:pointer}
+.hero{min-height:76vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 45%,#6b4b1d66 0,transparent 35%),linear-gradient(115deg,#080808 12%,#17120a 65%,#080808)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.15)),radial-gradient(circle at 80% 20%,#e5b85a22,transparent 30%);pointer-events:none}
+.hero-inner{position:relative;padding:90px 0 100px;max-width:800px}.eyebrow{color:var(--gold2);letter-spacing:.25em;text-transform:uppercase;font-size:.75rem;font-weight:bold}
+h1{font-size:clamp(2.5rem,7vw,5.8rem);line-height:1.03;margin:20px 0;color:#fff;letter-spacing:-.04em}h1 span{color:var(--gold2)}.hero p{max-width:620px;color:#ddd4c2;font-size:1.1rem}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 20px;border-radius:4px;font-weight:bold;background:linear-gradient(120deg,var(--gold2),var(--gold));color:#171107}.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold2)}
+section{padding:76px 0}.section-kicker{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;font-weight:bold}.section-title{font-size:clamp(2rem,4vw,3.2rem);line-height:1.15;margin:10px 0 20px}.lead{color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{border:1px solid #332a1b;background:linear-gradient(145deg,#15130f,#0d0d0d);padding:25px;border-radius:8px}.card .icon{font-size:1.7rem}.card h3{color:var(--gold2);margin:10px 0}.card p{color:var(--muted);margin-bottom:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.feature-box{min-height:300px;border:1px solid #4c3b20;border-radius:10px;background:radial-gradient(circle at 50% 30%,#87612655,transparent 55%),linear-gradient(140deg,#1b160d,#090909);display:grid;place-items:center;text-align:center;padding:25px}.cross{font-size:5rem;color:var(--gold2);text-shadow:0 0 35px #d9b15f66}
+.dark{background:#0e0e0e;border-top:1px solid #211b11;border-bottom:1px solid #211b11}.livebox{border:1px solid #4d3b1e;border-radius:8px;padding:28px;background:#0a0a0a}.liveplaceholder{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#1b1710,#080808);border-radius:6px;color:var(--gold2);padding:20px}.liveplaceholder b{font-size:1.5rem}
+.event-date{font-size:.75rem;color:var(--gold);letter-spacing:.15em;text-transform:uppercase}.tag{display:inline-block;border:1px solid #604c29;border-radius:20px;padding:4px 10px;color:var(--gold2);font-size:.75rem;margin-top:14px}
+.form{display:grid;gap:12px;max-width:650px;margin-top:25px}.form input,.form textarea{width:100%;background:#111;border:1px solid #40331e;color:white;padding:14px;border-radius:4px;font:inherit}.form textarea{min-height:120px;resize:vertical}.note{font-size:.85rem;color:#a9a294}
+footer{padding:32px 0;border-top:1px solid #302719;color:var(--muted);font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.telugu{display:none}.show-te .english{display:none}.show-te .telugu{display:inline}.show-te .te-block{display:block}.te-block{display:none}
+@media(max-width:800px){.nav{align-items:flex-start;padding:16px 0;flex-wrap:wrap}nav{order:3;width:100%;gap:13px}.grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.hero{min-height:68vh}section{padding:58px 0}}
+
+.logo-img{height:48px;width:64px;object-fit:contain;vertical-align:middle;margin-right:10px;filter:drop-shadow(0 0 10px #d9b15f55)}
+.pastor-photo{width:100%;max-height:480px;object-fit:cover;object-position:center 30%;border-radius:8px;border:1px solid #6b5128;box-shadow:0 16px 45px #0009}
+.brandline{display:flex;align-items:center;gap:4px}
+@media(max-width:800px){.logo-img{height:40px;width:52px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="brandline"><img class="logo-img" src="church-logo.png" alt="Yehova Ere Holy Fire Ministries logo"><span>YEHOVA ERE <span>HOLY FIRE</span><small>MINISTRIES</small></span></span></a>
+<nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#worship">Worship</a><a href="#events">Events</a><a href="#sermons">Sermons</a><a href="#prayer">Prayer</a><a href="#contact">Contact</a></nav>
+<button class="lang" id="langBtn" type="button">తెలుగు</button>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap hero-inner">
+<div class="eyebrow english">Faith · Worship · Community</div><div class="eyebrow telugu">విశ్వాసం · ఆరాధన · సహవాసం</div>
+<h1 class="english">A place to <span>worship.</span><br>A family in faith.</h1>
+<h1 class="telugu">ఆరాధనకు ఒక స్థలం.<br><span>విశ్వాసంలో ఒక కుటుంబం.</span></h1>
+<p class="english">Welcome to Yehova Ere Holy Fire Ministries. Join us in worship, prayer, the Word of God, and a community growing together in faith.</p>
+<p class="telugu">యెహోవా ఎరే హోలీ ఫైర్ మినిస్ట్రీస్‌కు స్వాగతం. ఆరాధనలో, ప్రార్థనలో, దేవుని వాక్యంలో మనతో కలిసి విశ్వాసంలో ఎదగండి.</p>
+<div class="actions"><a class="btn" href="#worship"><span class="english">Explore Our Ministry</span><span class="telugu">మా పరిచర్యను చూడండి</span></a><a class="btn outline" href="#contact"><span class="english">Plan a Visit</span><span class="telugu">మమ్మల్ని సందర్శించండి</span></a></div>
+</div></section>
+<section id="about"><div class="wrap split"><div><div class="section-kicker english">Welcome to our ministry</div><div class="section-kicker telugu">మా పరిచర్యకు స్వాగతం</div>
+<h2 class="section-title english">Growing together in faith and love.</h2><h2 class="section-title telugu">విశ్వాసంలో, ప్రేమలో కలిసి ఎదుగుదాం.</h2>
+<p class="lead english">We are a Christian ministry committed to worship, prayer, sharing the Gospel, and serving our community. Everyone is welcome to join us.</p><p class="lead telugu">ఆరాధన, ప్రార్థన, సువార్త ప్రకటించడం మరియు సమాజానికి సేవ చేయడం మా క్రైస్తవ పరిచర్య లక్ష్యం. ప్రతి ఒక్కరికీ మా ఆహ్వానం.</p>
+<p class="note">Replace this introduction with your ministry’s approved history, vision, and mission.</p></div><div><img class="pastor-photo" src="pastor.jpg" alt="Pastor of Yehova Ere Holy Fire Ministries"><p class="note" style="text-align:center">Pastor — Yehova Ere Holy Fire Ministries</p></div></div></section>
+<section id="worship" class="dark"><div class="wrap"><div class="section-kicker">Join us</div><h2 class="section-title english">Worship & Prayer</h2><h2 class="section-title telugu">ఆరాధన & ప్రార్థన</h2><p class="lead english">You are welcome to worship with us. Add your confirmed weekly service times below.</p><p class="lead telugu">మాతో కలిసి ఆరాధించడానికి మీకు స్వాగతం. వారపు ఆరాధన సమయాలను ఇక్కడ చేర్చండి.</p>
+<div class="grid"><article class="card"><div class="icon">🙏</div><h3>Sunday Worship</h3><p>Service time: <strong>[Add time]</strong></p></article><article class="card"><div class="icon">📖</div><h3>Bible & Prayer</h3><p>Day and time: <strong>[Add schedule]</strong></p></article><article class="card"><div class="icon">🔥</div><h3>Special Meetings</h3><p>Check our events section for upcoming programs.</p></article></div></div></section>
+<section id="live"><div class="wrap"><div class="section-kicker">Watch online</div><h2 class="section-title">Live Worship</h2><p class="lead">When your YouTube livestream is scheduled, visitors will be able to watch it here. Add your YouTube channel or livestream link to replace this placeholder.</p><div class="livebox"><div class="liveplaceholder"><div><b>▶ LIVE WORSHIP</b><p>Church livestream will appear here</p><p class="note">The channel is connected below. A specific livestream/video embed can be added when you share its link.</p></div></div><div class="actions"><a class="btn outline" href="https://youtube.com/@yehovaereholyfireministrie5175?si=7DO4C-wVs_Ug_nXM" target="_blank" rel="noopener">Visit Our YouTube Channel</a></div></div></div></section>
+<section id="events" class="dark"><div class="wrap"><div class="section-kicker">What’s happening</div><h2 class="section-title">Ministry Events</h2><p class="lead">Share upcoming services, revival meetings, youth programs, and children’s events here.</p><div class="grid"><article class="card"><div class="event-date">Upcoming event</div><h3>Revival Meetings</h3><p>Add the event date, time, location, and poster.</p><span class="tag">Prayer · Worship</span></article><article class="card"><div class="event-date">Upcoming event</div><h3>Youth Fest</h3><p>Add details for your next youth gathering.</p><span class="tag">Youth Ministry</span></article><article class="card"><div class="event-date">Upcoming event</div><h3>Kingdom Kids Fest</h3><p>Add details for your children’s ministry event.</p><span class="tag">Children</span></article></div></div></section>
+<section id="sermons"><div class="wrap"><div class="section-kicker">Watch & grow</div><h2 class="section-title">Sermons & Worship Videos</h2><p class="lead">Add your YouTube channel link or embed selected sermons and worship videos in this section.</p><div class="card"><h3>Your latest message</h3><p>Video placeholder — add your YouTube video link when ready.</p><a class="btn outline" href="https://youtube.com/@yehovaereholyfireministrie5175?si=7DO4C-wVs_Ug_nXM" target="_blank" rel="noopener">Visit Our YouTube Channel</a></div></div></section>
+<section id="prayer" class="dark"><div class="wrap split"><div><div class="section-kicker">We would love to pray with you</div><h2 class="section-title">Prayer Requests</h2><p class="lead">If you would like prayer, you can reach out to the ministry. Please avoid sharing highly private or sensitive information in a public message.</p></div><div class="card"><h3>Send a prayer request</h3><p>This starter website does not send form submissions yet. Add a ministry email, WhatsApp contact, or a Google Form to receive requests securely.</p><a class="btn outline" href="#contact">Contact the Ministry</a></div></div></section>
+<section id="contact"><div class="wrap split"><div><div class="section-kicker">Get in touch</div><h2 class="section-title">Contact & Visit Us</h2><p class="lead">We would be glad to hear from you. Add the official church address, contact number, service schedule, and map below.</p><p><strong>Location:</strong> <span class="note">[Add church address, Bapatla, Andhra Pradesh]</span></p><p><strong>Phone / WhatsApp:</strong> <span class="note">[Add official ministry number]</span></p><p><strong>Email:</strong> <span class="note">[Add ministry email]</span></p></div><div class="feature-box"><div><div class="cross">⌖</div><h3>Visit Our Church</h3><p class="note">Add your Google Maps link here when available.</p></div></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><strong style="color:var(--gold2)">YEHOVA ERE HOLY FIRE MINISTRIES</strong><br><span>Faith · Worship · Community</span></div><div>© <span id="year"></span> Yehova Ere Holy Fire Ministries. All rights reserved.</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const btn=document.getElementById('langBtn');
+btn.addEventListener('click',()=>{document.body.classList.toggle('show-te');btn.textContent=document.body.classList.contains('show-te')?'English':'తెలుగు';});
+</script>
+</body></html>
